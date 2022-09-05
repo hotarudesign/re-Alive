@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+html {
+  font-size: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  letter-spacing: 1px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, #d7dbfc, #eed3fd);
+  &__inner {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 20%;
+  }
+  &__nav {
+    width: 60%;
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__list-item {
+    margin-right: 2%;
+  }
+}
+.mv {
+  background: url(../images/mv_pc.png) no-repeat center/cover;
+  height: 500px;
+}

@@ -11,3 +11,49 @@ body { font-family: "Noto Sans JP", sans-serif; letter-spacing: 0.1em; color: #0
 .mv { background: #ccc; height: 60vh; }
 
 .mv .page-ttl { font-size: 40px; color: #fff; }
+
+.col-2__inner { display: flex; justify-content: space-between; padding: 4%; width: 100%; }
+
+.main-column { width: 70%; }
+
+.card__list { display: flex; justify-content: space-between; align-items: center; margin: 8% 0 0 0; }
+
+.card__item { width: calc((100% - 40px) / 3); }
+
+.card__img { background: linear-gradient(-45deg, #eed3fd, #d7dbfc); height: 160px; }
+
+.card__txt { margin: 2% 0 0 0; text-align: center; }
+
+.side-bar { width: 25%; }
+
+.side-bar .profile { padding: 12% 10%; box-shadow: 2px 2px 10px #e7e7e7; }
+
+.side-bar .profile__img-wrap { width: 200px; height: 200px; margin: 0 auto; }
+
+.side-bar .profile__thumnail { border-radius: 100px; }
+
+.side-bar .profile__text-area { text-align: center; }
+
+.side-bar .profile__ttl { margin: 4% 0 0 0; font-weight: 700; font-size: 24px; }
+
+.side-bar .profile__lead { margin: 1% 0 0 0; }
+
+.side-bar .profile__txt { margin: 8% 0 0 0; line-height: 1.7; text-align: left; }
+
+.side-bar .profile-btn-area { margin: 10% auto 0; text-align: center; }
+
+.side-bar .profile-btn { padding: 2% 6%; background: #051276; color: #fff; border-radius: 5px; }
+
+.side-bar .profile .sns-logo { position: relative; margin: 20% auto 0; width: 10%; }
+
+.side-bar .profile .sns-logo::before { content: ""; display: inline-block; width: 40px; height: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid #020944; border-radius: 50px; }
+
+.search { display: flex; margin: 10% 0 0 0; }
+
+.search-input { padding: 3.5% 2%; width: 250px; border: 1px solid #e7e7e7; }
+
+.search-btn { position: relative; width: 40px; height: 40px; background: #3c52f6; }
+
+.search-btn::before { content: ""; position: absolute; top: 18%; left: 18%; display: inline-block; width: 24px; height: 24px; border-radius: 50px; border: 1px solid #fff; }
+
+.search-btn::after { content: ""; position: absolute; bottom: 20%; right: 10%; display: inline-block; width: 10px; height: 1px; background: #fff; transform: rotate(45deg); }

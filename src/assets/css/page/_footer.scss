@@ -1,0 +1,36 @@
+.footer {
+  margin: 6% 0 0 0;
+  background: #ccc;
+  .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2% 4% 1%;
+    text-align: center;
+    .copyright {
+      margin: 3% 0 0 0;
+      font-size: 10px;
+      color: #fff;
+    }
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+  }
+  .f-nav {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3% auto 0;
+      width: 60%;
+    }
+    &__item {
+      margin: 0 2% 0 0;
+      color: #fff;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

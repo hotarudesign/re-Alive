@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(-45deg, #eed3fd, #d7dbfc);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+  }
+}
+.g-nav {
+  width: 50%;
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  &__item {
+    margin: 0 2% 0 0;
+    color: #fff;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

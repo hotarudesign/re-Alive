@@ -6,7 +6,7 @@
 
 .g-nav__list { display: flex; justify-content: flex-end; width: 100%; }
 
-.g-nav__item { margin: 0 2% 0 0; color: #fff; }
+.g-nav__item { margin: 0 2% 0 0; color: #fff; text-shadow: 0px 0px 30px #56038e; }
 
 .g-nav__item:last-child { margin-right: 0; }
 
@@ -68,7 +68,7 @@
 
 .logo { width: 10%; }
 
-.home .mv { background: url(../images/mv_pc.png) no-repeat center/cover; height: 80vh; }
+.home .mv { background: url(../images/mv_pc.png) no-repeat center/cover; height: 75vh; }
 
 .col-2__inner { display: flex; justify-content: space-between; padding: 4%; width: 100%; }
 
@@ -88,19 +88,23 @@
 
 .merit__list { display: flex; flex-direction: column; margin: 4% 0 0; }
 
-.merit__item { margin: 6% 0 0; width: 60%; }
+.merit__item { display: flex; justify-content: space-between; align-items: center; margin: 8% 0 0; }
 
 .merit__item:first-child { margin-top: 0; }
 
-.merit__item:nth-child(even) { margin-left: auto; }
+.merit__item:nth-child(even) { flex-direction: row-reverse; }
+
+.merit__text-area { width: 65%; }
 
 .merit__ttl-wrap { display: flex; justify-content: flex-start; align-items: center; }
 
 .merit__ttl { margin: 0 0 0 2%; font-weight: 700; font-size: 20px; letter-spacing: 0.01em; }
 
-.merit__img-wrap { width: 10%; }
+.merit__num { width: 10%; }
 
 .merit__txt { margin: 2% 0 0; line-height: 2; }
+
+.merit__img-wrap { width: 30%; height: 160px; background: linear-gradient(-45deg, #eed3fd, #d7dbfc); }
 
 .blog { margin: 8% 0 0 0; }
 

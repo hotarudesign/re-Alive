@@ -12,7 +12,7 @@
 .home {
   .mv {
     background: url(../images/mv_pc.png) no-repeat center/cover;
-    height: 80vh;
+    height: 75vh;
   }
 }
 
@@ -71,14 +71,19 @@
     margin: 4% 0 0;
   }
   &__item {
-    margin: 6% 0 0;
-    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8% 0 0;
     &:first-child {
       margin-top: 0;
     }
     &:nth-child(even) {
-      margin-left: auto;
+      flex-direction: row-reverse;
     }
+  }
+  &__text-area {
+    width: 65%;
   }
   &__ttl-wrap {
     display: flex;
@@ -91,12 +96,17 @@
     font-size: 20px;
     letter-spacing: 0.01em;
   }
-  &__img-wrap {
+  &__num {
     width: 10%;
   }
   &__txt {
     margin: 2% 0 0;
     line-height: 2;
+  }
+  &__img-wrap {
+    width: 30%;
+    height: 160px;
+    background: linear-gradient(-45deg, #eed3fd, #d7dbfc);
   }
 }
 .blog {

@@ -8,7 +8,7 @@ body { font-family: "Noto Sans JP", sans-serif; letter-spacing: 0.1em; color: #0
 
 .logo { width: 10%; }
 
-.mv { background: #ccc; height: 60vh; }
+.mv { background: #ccc; }
 
 .mv .page-ttl { font-size: 40px; color: #fff; }
 

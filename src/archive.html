@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/base/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/archive.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
-  <body class="profile">
+  <body class="voice">
     <header class="header">
       <div class="header__inner">
         <a href="" class="logo header__logo"
@@ -22,19 +23,19 @@
         <nav class="g-nav">
           <ul class="g-nav__list">
             <li class="g-nav__item">
-              <a href="" class="g-nav__link">Home</a>
+              <a href="./index.html" class="g-nav__link">Home</a>
             </li>
             <li class="g-nav__item">
-              <a href="" class="g-nav__link">Profile</a>
+              <a href="./profile.html" class="g-nav__link">Profile</a>
             </li>
             <li class="g-nav__item">
-              <a href="" class="g-nav__link">Sample Voice</a>
+              <a href="./voice.html" class="g-nav__link">Sample Voice</a>
             </li>
             <li class="g-nav__item">
-              <a href="" class="g-nav__link">Archive</a>
+              <a href="./archive.html" class="g-nav__link">Archive</a>
             </li>
             <li class="g-nav__item">
-              <a href="" class="g-nav__link">Contact</a>
+              <a href="./contact.html" class="g-nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -43,6 +44,53 @@
     <div class="mv">
       <h2 class="page-ttl">Profile</h2>
     </div>
+    <main class="main">
+      <div class="col-2 container">
+        <div class="inner col-2__inner">
+          <div class="main__column">
+          </div>
+          <aside class="side-bar">
+            <div class="profile">
+              <div class="profile__img-wrap">
+                <picture">
+                  <source
+                    srcset="./assets/iamges/webp/profile.webp"
+                    type="images/webp"
+                  />
+                  <img class="profile__thumnail" src="./assets/images/profile.png" alt="" />
+                </picture>
+              </div>
+              <div class="profile__text-area">
+                <h3 class="profile__ttl">玖珂諒多</h3>
+                <p class="profile__lead">フリー同人声優&ナレーター</p>
+                <p class="profile__txt">声活動に関してはもともと2008年から同人声優として始めていますが様々な企画様とご縁をいただき参加企画数はおかげさまで200を超えています</p>
+              </div>
+              <div class="profile-btn-area">
+                <a href="" class="profile-btn">プロフィール</a>
+              </div>
+              <div class="sns-logo">
+                <img src="./assets/images/twitter-brands.svg" alt="">
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="col-2 container">
+        <div class="inner col-2__inner">
+          <section class="main-column">
+          </section>
+          <aside class="side-bar">
+            <div class="timeline">
+              <a class="twitter-timeline" data-width="350" data-height="1000" href="https://twitter.com/kgrt_reAlive?ref_src=twsrc%5Etfw">Tweets by kgrt_reAlive</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="search">
+              <input type="search" class="search-input" name="" value="" placeholder="〇〇を検索する">
+              <button type="submit" class="search-btn" name=""></button>
+            </div>
+          </aside>
+        </div>
+    </div>
+    </main>
     <section class="post">
       <div class="inner post__inner">
         <h2 class="sec-ttl">最近の投稿</h2>

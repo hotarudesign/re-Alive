@@ -66,20 +66,6 @@
 
 .footer .f-nav__item:last-child { margin-right: 0; }
 
-.profile .mv { margin-top: 4%; background: url(../images/mv_pc03.png) no-repeat center/cover; height: 70vh; }
+.voice .mv { margin-top: 4%; background: url(../images/mv_pc02.png) no-repeat center/cover; height: 70vh; }
 
-.profile .main__column { width: 75%; }
-
-.profile .about__item { display: flex; justify-content: space-between; width: 100%; }
-
-.profile .about__img { width: 40%; }
-
-.profile .about__text { width: 60%; padding: 3%; }
-
-.profile .about__text-wrap { display: flex; margin: 4% 0 0; line-height: 1.7; }
-
-.profile .about__item-ttl { display: inline-block; width: 25%; }
-
-.profile .about__item-desc { display: inline-block; width: 70%; }
-
-.profile .history { margin: 4% 0; }
+.voice .main__column { width: 75%; }

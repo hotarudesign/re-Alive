@@ -1,15 +1,25 @@
 @charset 'UTF-8';
 
+$mainColor: rgb(2, 11, 85);
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(-45deg, #eed3fd, #d7dbfc);
+  transition: 0.5s;
+  z-index: 10;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 4%;
+    padding: 16px 50px;
+  }
+}
+.header.active {
+  background: #e7e7e7;
+  transition: 0.5s;
+  .g-nav__item {
+    color: $mainColor;
   }
 }
 .g-nav {
@@ -22,7 +32,6 @@
   &__item {
     margin: 0 2% 0 0;
     color: #fff;
-    text-shadow: 0px 0px 30px rgb(86, 3, 142);
     &:last-child {
       margin-right: 0;
     }

@@ -1,0 +1,38 @@
+.feature {
+  .sec-ttl {
+    position: relative;
+    background: linear-gradient(-45deg, #cd98ea, #6b78f3);
+    background: -webkit-linear-gradient(0deg, #cd98ea, #6b78f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__txt {
+    margin: 20px auto 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  &__list-ttl {
+    margin: 40px 0 0;
+    display: inline-block;
+    background: linear-gradient(-45deg, #cd98ea, #6b78f3);
+    background: -webkit-linear-gradient(0deg, #cd98ea, #6b78f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+  }
+  &__list {
+    margin: 20px auto 0;
+  }
+  &__item {
+    display: inline-block;
+    background: $mainColor;
+    color: #fff;
+    margin: 2px 0 0;
+    padding: 2px 5px;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+}

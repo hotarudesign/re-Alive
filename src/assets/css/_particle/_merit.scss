@@ -1,0 +1,63 @@
+.col-2 {
+  &:nth-child(3) {
+    background: #efefef;
+  }
+}
+.merit {
+  .sec-ttl {
+    &:after {
+      top: 55%;
+      left: 180px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  &__text-area {
+    width: 550px;
+  }
+  &__ttl-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__ttl {
+    margin: 0 0 0 2%;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
+  &__num {
+    font-size: 50px;
+    display: inline-block;
+    background: linear-gradient(45deg, #d36565, #3847ca);
+    background: -webkit-linear-gradient(0deg, #d36565, #3847ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+  }
+  &__txt {
+    margin: 16px 0 0;
+    line-height: 1.8;
+  }
+  &__img-wrap {
+    width: 260px;
+    height: 160px;
+    background: #fff;
+  }
+}

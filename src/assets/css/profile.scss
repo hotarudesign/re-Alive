@@ -1,48 +1,105 @@
 @charset 'UTF-8';
 
-@import "base/variable";
-@import "page/header";
-@import "page/side-bar";
-@import "page/post";
-@import "page/footer";
+@import "_particle/header";
+@import "_particle/sidebar";
+@import "_particle/post";
+@import "_particle/footer";
+$mainColor: rgb(2, 11, 85);
 
 .profile {
+  .sec-ttl {
+    background: linear-gradient(-45deg, #d6aaee, #969fed);
+    background: -webkit-linear-gradient(0deg, #d6aaee, #969fed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    &::after {
+      display: none;
+    }
+  }
   .mv {
-    margin-top: 4%;
-    background: url(../images/mv_pc03.png) no-repeat center/cover;
-    height: 70vh;
+    background: url(../images/mv_pc02.png) no-repeat center/cover;
+    &__inner {
+      padding: 220px 40px;
+    }
+    .page-ttl {
+      position: relative;
+      display: inline-block;
+      padding: 2px 10px;
+      font-weight: 800;
+      font-size: 48px;
+      background: #fff;
+      color: $mainColor;
+      z-index: 2;
+    }
+  }
+  .col-2__inner {
+    padding: 80px 40px 40px;
   }
   .main__column {
-    width: 75%;
+    width: 980px;
   }
   .about {
     &__item {
       display: flex;
       justify-content: space-between;
-      width: 100%;
     }
     &__img {
-      width: 40%;
+      width: 380px;
     }
     &__text {
-      width: 60%;
-      padding: 3%;
+      width: 520px;
+      padding: 30px;
       &-wrap {
         display: flex;
-        margin: 4% 0 0;
+        margin: 14px 0 0;
         line-height: 1.7;
       }
     }
     &__item-ttl {
       display: inline-block;
-      width: 25%;
+      width: 100px;
     }
     &__item-desc {
       display: inline-block;
-      width: 70%;
+      width: 400px;
+    }
+    &__message {
+      margin: 20px 0 0;
+      width: 860px;
+      &-txt {
+        margin: 20px 0 0;
+        line-height: 1.7;
+      }
     }
   }
   .history {
-    margin: 4% 0;
+    padding: 0 0 40px;
+    &__ttl {
+      display: block;
+      margin: 40px 40px 0 0;
+      padding: 5px 6px;
+      background: $mainColor;
+      color: #fff;
+      font-size: 20px;
+    }
+    &__finished {
+      margin: 10px 0 0 20px;
+      width: 880px;
+      line-height: 2;
+      &-item {
+        display: inline-block;
+        width: 420px;
+        border-bottom: 1px solid #e7e7e7;
+      }
+      &-detail {
+        display: inline-block;
+        width: 400px;
+        border-bottom: 1px solid #e7e7e7;
+      }
+    }
   }
 }

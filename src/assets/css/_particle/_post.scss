@@ -1,0 +1,27 @@
+.post {
+  .sec-ttl {
+    &:after {
+      left: 300px;
+    }
+  }
+  &__inner {
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+  &__list {
+    margin: 0px 0 0 0;
+    .card__item {
+      margin: 0 80px 0 0;
+      width: 400px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .card__img {
+      height: 200px;
+    }
+    &.card__list {
+      margin: 40px 0 0;
+    }
+  }
+}

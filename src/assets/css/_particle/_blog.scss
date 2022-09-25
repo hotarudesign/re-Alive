@@ -1,0 +1,49 @@
+.blog {
+  .sec-ttl {
+    &:after {
+      top: 55%;
+      left: 160px;
+    }
+  }
+  margin: 8% 0 0 0;
+  &__list {
+    margin: 4% 0 0 0;
+  }
+  &__btn-area {
+    margin: 6% 0 0 0;
+    text-align: center;
+  }
+  &__btn {
+    padding: 10px 100px;
+    background: #fff;
+    border: 1px solid #dfdcdc;
+    border-radius: 5px;
+    .arrow {
+      position: relative;
+      left: 45px;
+      width: 40px;
+      height: 20px;
+      &::before {
+        position: absolute;
+        top: 60%;
+        right: 0;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        background: #dfdcdc;
+      }
+      &::after {
+        position: absolute;
+        top: 41%;
+        right: 0;
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 1px;
+        transform: rotate(45deg);
+        background: #dfdcdc;
+      }
+    }
+  }
+}

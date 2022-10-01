@@ -76,36 +76,22 @@
 
 .footer .f-nav__item:last-child { margin-right: 0; }
 
-.voice .col-2__inner { padding: 80px 40px 40px; }
+.archive-page .col-2__inner { padding: 80px 40px 40px; }
 
-.voice .sec-ttl { background: linear-gradient(-45deg, #d6aaee, #969fed); background: -webkit-linear-gradient(0deg, #d6aaee, #969fed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 40px; display: inline-block; padding: 10px; text-align: left; }
+.archive-page .sec-ttl { background: linear-gradient(-45deg, #d6aaee, #969fed); background: -webkit-linear-gradient(0deg, #d6aaee, #969fed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 70px; display: inline-block; padding: 10px; text-align: left; }
 
-.voice .sec-ttl::after { display: none; }
+.archive-page .sec-ttl::after { display: none; }
 
-.voice .mv { background: url(../images/mv_pc02.png) no-repeat center/cover; }
+.archive-page .mv { background: url(../images/mv_pc02.png) no-repeat center/cover; }
 
-.voice .mv__inner { padding: 220px 40px; }
+.archive-page .mv__inner { padding: 220px 40px; }
 
-.voice .mv .page-ttl { position: relative; display: inline-block; padding: 2px 10px; font-weight: 800; font-size: 48px; background: #fff; color: #020b55; z-index: 2; }
+.archive-page .mv .page-ttl { position: relative; display: inline-block; padding: 2px 10px; font-weight: 800; font-size: 48px; background: #fff; color: #020b55; z-index: 2; }
 
-.voice .main__column { width: 900px; }
+.archive-page .main__column { width: 900px; }
 
-.voice .sample-voice__list { display: flex; justify-content: flex-start; flex-direction: column; }
+.archive-page .main__column .archive__ttl { font-weight: 800; font-size: 24px; }
 
-.voice .sample-voice__item { display: flex; justify-content: flex-start; align-items: center; margin: 40px 0 0; }
+.archive-page .main__column .archive__cat { margin: 60px 0 0; }
 
-.voice .sample-voice__item:last-child { margin-right: 0; }
-
-.voice .sample-voice__audio { margin: 5px 0 0; width: 300px; }
-
-.voice .sample-voice__txt { display: inline-block; margin: 0 0 0 40px; width: 400px; line-height: 1.4; vertical-align: top; }
-
-.voice .sample-movie { margin: 60px auto 0; }
-
-.voice .sample-movie__list { display: flex; justify-content: flex-start; }
-
-.voice .sample-movie__item { margin: 20px 40px 0 0; }
-
-.voice .sample-movie__item:last-child { margin-right: 0; }
-
-.voice .sample-movie__movie { margin: 5px 0 0; width: 250px; }
+.archive-page .main__column .card__list { margin: 20px 0 0; }

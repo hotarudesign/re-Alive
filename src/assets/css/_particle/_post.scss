@@ -1,3 +1,5 @@
+@import "../common.scss";
+
 .post {
   .sec-ttl {
     &:after {
@@ -13,12 +15,19 @@
     .card__item {
       margin: 0 80px 0 0;
       width: 400px;
+      @include sp {
+        width: 100%;
+        margin: 0;
+      }
       &:last-child {
         margin-right: 0;
       }
     }
     .card__img {
       height: 200px;
+      @include sp {
+        width: 100%;
+      }
     }
     &.card__list {
       margin: 40px 0 0;

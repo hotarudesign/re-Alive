@@ -13,13 +13,29 @@ gsap.to(".js-card", {
     start: "top top",
   },
 });
-gsap.set(".js-hero-ttl", {
+gsap.set(".js-main-ttl", {
   opacity: 0,
   x: 200,
 });
-gsap.to(".js-hero-ttl", {
+gsap.to(".js-main-ttl", {
   opacity: 1,
   x: 0,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".mv",
+    start: "bottom center",
+  },
+});
+gsap.set(".js-main-column-btn", {
+  opacity: 0,
+});
+gsap.to(".js-main-column-btn", {
+  opacity: 1,
+  delay: 0.7,
+  scrollTrigger: {
+    trigger: ".mv",
+    start: "bottom center",
+  },
 });
 gsap.set(".js-feature-item", {
   opacity: 0,

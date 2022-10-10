@@ -1,10 +1,20 @@
+@import "../common.scss";
 .col-2 {
+  @include sp {
+  }
   &:nth-child(3) {
     background: #efefef;
   }
 }
 .merit {
+  @include sp {
+    position: relative;
+    padding: 5% 0 0;
+  }
   .sec-ttl {
+    @include sp {
+      top: 0%;
+    }
     &:after {
       top: 55%;
       left: 180px;
@@ -14,32 +24,55 @@
     display: flex;
     flex-direction: column;
     margin: 60px 0 0;
+    @include sp {
+      margin: 14% 0 0;
+    }
   }
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 40px 0 0;
+    @include sp {
+      flex-direction: column;
+    }
     &:first-child {
       margin-top: 0;
     }
     &:nth-child(even) {
       flex-direction: row-reverse;
+      @include sp {
+        flex-direction: column;
+      }
     }
   }
   &__text-area {
     width: 550px;
+    @include sp {
+      width: 95%;
+    }
   }
   &__ttl-wrap {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @include sp {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+    }
   }
   &__ttl {
     margin: 0 0 0 2%;
     font-weight: 800;
     font-size: 20px;
     letter-spacing: 0.01em;
+    @include sp {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
   }
   &__num {
     font-size: 50px;
@@ -50,14 +83,25 @@
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-family: "Dancing Script", cursive;
+    @include sp {
+      font-size: 42px;
+    }
   }
   &__txt {
     margin: 16px 0 0;
     line-height: 1.8;
+    @include sp {
+      margin: 2% 0 0;
+    }
   }
   &__img-wrap {
     width: 260px;
     height: 160px;
     background: #fff;
+    @include sp {
+      margin: 2% 0 0;
+      width: 95%;
+      height: 200px;
+    }
   }
 }

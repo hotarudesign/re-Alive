@@ -1,4 +1,9 @@
+@import "../common.scss";
 .feature {
+  position: relative;
+  @include sp {
+    padding: 10% 0;
+  }
   .sec-ttl {
     position: relative;
     background: linear-gradient(-45deg, #cd98ea, #6b78f3);
@@ -10,6 +15,9 @@
     margin: 20px auto 0;
     font-size: 20px;
     line-height: 1.5;
+    @include sp {
+      font-size: 16px;
+    }
   }
   &__list-ttl {
     margin: 40px 0 0;
@@ -22,9 +30,19 @@
     font-weight: 900;
     font-size: 36px;
     text-align: center;
+    @include sp {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+    }
   }
   &__list {
     margin: 20px auto 0;
+    @include sp {
+      margin: 20% auto 0;
+      width: 95%;
+    }
   }
   &__item {
     display: inline-block;

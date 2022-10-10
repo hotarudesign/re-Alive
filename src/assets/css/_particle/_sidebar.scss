@@ -1,10 +1,20 @@
+@import "../common.scss";
 .side-bar {
   max-width: 300px;
+  @include sp {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 0 10% 0;
+  }
   .profile {
     padding: 40px 20px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #e7e7e7;
+    @include sp {
+      width: 100%;
+      padding: 10% 5%;
+    }
     &__img-wrap {
       width: 200px;
       height: 200px;
@@ -61,12 +71,19 @@
 .search {
   display: flex;
   margin: 100px 0 0 0;
+  @include sp {
+    margin: 10% 0 0;
+  }
   &-input {
     padding: 3.5px 4px;
     width: 250px;
     background: #fff;
     border: 1px solid #e7e7e7;
     border-radius: 5px 0 0 5px;
+    @include sp {
+      padding: 5%;
+      width: 100%;
+    }
   }
   &-btn {
     position: relative;
@@ -74,6 +91,10 @@
     height: 40px;
     background: #3c52f6;
     border-radius: 0 5px 5px 0;
+    @include sp {
+      width: 64px;
+      height: 54px;
+    }
     &::before {
       content: "";
       position: absolute;

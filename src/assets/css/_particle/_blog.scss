@@ -1,17 +1,30 @@
+@import "../common.scss";
 .blog {
+  position: relative;
+  margin: 8% 0 0 0;
+  @include sp {
+    margin: 0;
+    padding: 20% 0 0;
+  }
   .sec-ttl {
+    top: 4%;
     &:after {
       top: 55%;
       left: 160px;
     }
   }
-  margin: 8% 0 0 0;
   &__list {
     margin: 4% 0 0 0;
+    @include sp {
+      margin: 24% 0 0;
+    }
   }
   &__btn-area {
     margin: 6% 0 0 0;
     text-align: center;
+    @include sp {
+      margin: 10%;
+    }
   }
   &__btn {
     padding: 10px 100px;
